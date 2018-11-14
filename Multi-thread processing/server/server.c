@@ -65,7 +65,7 @@ int main(){
             perror("could not create thread");
             return 1;
         }
-        // pthread_join(thread_id, NULL);
+        pthread_join(thread_id, NULL);
     }
     close(client_sockfd);
     return 0;
